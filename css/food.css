@@ -2,18 +2,30 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* start nabar */
 .navbar-dark .nav-item .nav-link {
     color: #fff;
   }
-  
-  .navbar-dark .nav-item .nav-link:hover {
+  .navbar-dark .nav-item .nav-link ,
+  .navbar .menu
+   {
+    font-size: 13px;
+    margin: 0 5px;
+  }
+  .navbar-dark .nav-item .nav-link:hover ,
+  .navbar .menu:hover 
+   {
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     border-radius: 0.25rem;
     color: #fff;
   }
-  
+  .navbar .menu:active {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
   .fa-li {
     position: relative;
     left: 0;
   }
+
+  /* end nabar */
