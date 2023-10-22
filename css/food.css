@@ -36,7 +36,7 @@ body {
 /* start carsoul */
 
 .carousel .carousel-inner {
-  height: 0;
+  
   padding-bottom: 50%;
   /* this sets carousel aspect ratio (4:1 here) */
 }
@@ -54,6 +54,7 @@ body {
   position: relative;
   display: inline-block;
 }
+
 /* 
 #002f4b,#dc4225 
 Convert HEX to RGBA - http://hex2rgba.devoth.com/
@@ -66,23 +67,41 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #43434359, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #43434359, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #43434359, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #43434359, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .carousel .carousel-inner .carousel-item img {
   height: 100%;
-  /* Bootstrap handles width already */
   object-fit: cover;
-  /* or 'contain' if you want stretch instead of crop */
+}
+/* end carsoul */
+/* start up next */
+.content-next .vcard:hover {
+  background-color: #383b3f !important;
+  transition: all 0.3s ease;
 }
 
-/*
-source
-http://stackoverflow.com/a/23935891/3853728
-*/
+.vcard .about-photo {
+  margin: 10px;
+  width: 88x;
+}
 
+.vcard .details {
+  width: calc(100% - 108px);
+}
 
-/* end carsoul */
+.vcard .details .about-details span {
+  display: block;
+  z-index: 2;
+  color: #FFF;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+/* end up next */
