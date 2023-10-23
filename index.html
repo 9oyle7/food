@@ -106,27 +106,31 @@
         <!-- Container wrapper -->
     </nav>
     <!-- offcanvase content -->
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-top overflow-auto vh-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="offcanvas-header">
               <a class="navbar-brand me-0" href="#"><img id="MDB-logo" src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo" draggable="false" height="30" /></a>  
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <a href="#" type="button"  class="link-warning fs-1" aria-label="Close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </a>
             </div>
             <div class="offcanvas-body">
-              <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-              </div>
-              <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="">
+                    <div class="title-nav d-flex">
+                      <i class="fa-solid fa-user pe-3 fa-xl text-warning"></i>
+                      <h4>Home</h4>
+                    </div>
+                    <div class="links">
+                      <a href="#" class=" list-group-item-action">A second link item</a>
+                      <a href="#" class=" list-group-item-action">A third link item</a>
+                      <a href="#" class=" list-group-item-action">A fourth link item</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

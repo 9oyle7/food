@@ -30,4 +30,10 @@ body {
 
   /* end nabar */
 
-  
+  /* start offcanvas  */
+
+  .offcanvas  {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  /* end  offcanvas  */
