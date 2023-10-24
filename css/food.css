@@ -46,6 +46,7 @@ body {
     .collapse.show {
       display: flex !important;
       flex-direction: column;
+      border-bottom:1px solid #ffffff1a;
     }
   }
   .collapsing {
