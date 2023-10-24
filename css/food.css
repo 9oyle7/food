@@ -1,9 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* start nabar */
 .navbar-dark .nav-item .nav-link {
+
     color: #fff;
   }
   .navbar-dark .nav-item .nav-link ,
@@ -66,3 +67,139 @@ body {
 }
 
   /* end  offcanvas  */
+
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link,
+.navbar .menu {
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+.navbar-dark .nav-item .nav-link:hover,
+.navbar .menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.navbar .menu:active {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+}
+
+/* end nabar */
+
+
+/* start carsoul */
+/* 
+.carousel .carousel-inner {
+  
+  padding-bottom: 50%;
+
+}
+
+.carousel .carousel-inner .carousel-item {
+  position: absolute !important;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel .carousel-inner .carousel-item .img-gradient {
+  position: relative;
+  display: inline-block;
+}
+
+
+.carousel .carousel-inner .carousel-item .img-gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: #000000;
+
+  background: -webkit-linear-gradient(to bottom, #43434359, #000000);
+ 
+  background: linear-gradient(to bottom, #43434359, #000000);
+ 
+
+}
+
+.carousel .carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+ */
+
+
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; 
+  top:0;
+  width:100%; 
+  height:100%;
+  display:inline-block;
+  background: -webkit-linear-gradient(to bottom, #43434359, #000000);
+  background: linear-gradient(to bottom, #43434359, #000000);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.carousel-control-next, 
+.carousel-control-prev {
+  top: 50%;
+  height: 30px;
+}
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+/* end carsoul */
+/* start up next */
+.content-next .vcard:hover {
+  background-color: #383b3f !important;
+  transition: all 0.3s ease;
+}
+
+.vcard .about-photo {
+  margin: 10px;
+  width: 100px;
+  height: 120px;
+}
+.vcard .about-photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.vcard .details {
+  width: calc(100% - 108px);
+}
+
+.vcard .details .about-details span {
+  display: block;
+  z-index: 2;
+  color: #FFF;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+/* end up next */
+
