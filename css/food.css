@@ -36,4 +36,21 @@ body {
     background-color: #1f1f1f;
     color: #fff;
   }
+  @media only screen and (min-width: 768px) {
+    .collapse {
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .collapse.show {
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+  .collapsing {
+  display: none;
+  transition: 0ms;
+  }
+
   /* end  offcanvas  */
