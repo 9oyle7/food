@@ -4,6 +4,70 @@ body {
 
 /* start nabar */
 .navbar-dark .nav-item .nav-link {
+
+    color: #fff;
+  }
+  .navbar-dark .nav-item .nav-link ,
+  .navbar .menu
+   {
+    font-size: 13px;
+    margin: 0 5px;
+  }
+  .navbar-dark .nav-item .nav-link:hover ,
+  .navbar .menu:hover 
+   {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+  }
+  .navbar .menu:active {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .fa-li {
+    position: relative;
+    left: 0;
+  }
+
+  /* end nabar */
+
+  /* start offcanvas  */
+
+  .offcanvas  {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  @media only screen and (min-width: 768px) {
+    .collapse {
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .collapse.show {
+      display: flex !important;
+      flex-direction: column;
+      border-bottom:1px solid #ffffff1a;
+    }
+  }
+  .collapsing {
+  display: none;
+  transition: 0ms;
+  }
+  @media only screen and (max-width: 767px) {
+    .collapse.show:nth-of-type(1) {
+      display: flex !important;
+      flex-direction: column;
+      border-bottom:1px solid #ffffff1a;
+      border-top: none;
+    }
+  }
+  .cUyVUh:nth-of-type(1) {
+    border-top: none;
+}
+
+  /* end  offcanvas  */
+
   color: #fff;
 }
 
@@ -138,3 +202,4 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
 }
 
 /* end up next */
+
