@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,7 +115,7 @@
               <a class="navbar-brand" href="#">
                 <img id="MDB-logo" src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo" draggable="false" height="30" />
               </a>  
-              <a href="#" type="button"  class="link-warning fs-1" aria-label="Close" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a href="#" type="button"  class="link-warning text-warning fs-1" aria-label="Close" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="fa-solid fa-circle-xmark"></i>
               </a>
             </div>
@@ -171,7 +171,7 @@
       </div>
     </div>
   <!-- end na-bar -->
-  <section class="carousel ">
+  <div class="carousel mt-4">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 carusel">
@@ -233,7 +233,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-<!-- Carousel wrapper -->
+          <!-- Carousel wrapper -->
         </div>
         <div class="col-lg-4  d-none d-lg-block overflow-hidden">
           <h4 class="text-warning fw-bold">Up Next</h4>
@@ -241,7 +241,7 @@
             <div class="row">
               <a href="#" class="text-decoration-none p-0 mb-1">
                 <div class="col">
-                  <div class="vcard overflow-hidden d-flex bg-dark rounded">
+                  <div class="vcard overflow-hidden d-flex rounded">
                     <div class="about-photo">
                       <img class="about-photo-img rounded"src="img/100x120.png" alt="saleh">
                     </div>
@@ -257,7 +257,7 @@
               <a href="#" class="text-decoration-none p-0 mb-1">
                 <div class="col
                 ">
-                  <div class="vcard overflow-hidden d-flex bg-dark rounded">
+                  <div class="vcard overflow-hidden d-flex rounded">
                     <div class="about-photo">
                       <img class="about-photo-img rounded"src="http://via.placeholder.com/100x120" alt="saleh">
                     </div>
@@ -272,7 +272,7 @@
               </a>
               <a href="#" class="text-decoration-none p-0 mb-1">
                 <div class="col">
-                  <div class="vcard overflow-hidden d-flex bg-dark rounded">
+                  <div class="vcard overflow-hidden d-flex rounded">
                     <div class="about-photo">
                       <img class="about-photo-img rounded"src="http://via.placeholder.com/100x120" alt="saleh">
                     </div>
@@ -290,11 +290,24 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- end carousel -->
-  <section class="text-center">
-    <h1>test</h1>
+  <!-- start what to show -->
+  <div class="container">
+    <h1 class="title-section text-warning">What to visit</h1>
+  </div>
+  <section class="What-to">
+    <div class="container">
+      <div class="row">
+        <a href="" class="text-decoration-none position-relative">
+          <h3 class="text-primary m-0 d-inline ps-3 d-flex align-items-center">Top Picks
+            <i class="fa-solid fa-chevron-right"></i>
+          </h3>
+        </a>
+      </div>
+    </div>
   </section>
+    <!-- end what to show -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
 </body>
