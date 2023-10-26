@@ -1,7 +1,14 @@
+:root {
+  --yeloow: #f5c518 ;
+  --yeloow-opacity: #f5c51899 ;
+  --white: #fff;
+  --transition:  all 0.3s ease;
+
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #000000;
-  color: #FFF;
+  color:  var(--white) !important;
 }
 section {
   padding-top: 20px;
@@ -9,18 +16,23 @@ section {
   font-weight: bold;
 }
 @media only screen and (max-width: 767px) {
-  section {
+  section , .carousel  {
     background: #121212;
   }
 }
+.offcanvas-header .link-warning:focus, 
+.offcanvas-header .link-warning:hover {
+ color: var(--yeloow-opacity) !important;
+ transition: var(--transition) ;
+}
 .text-warning {
-  color: #f5c518 !important;
+  color: var(--yeloow) !important;
 }
 .text-primary {
-  color: #fff !important;
+  color: var(--white) !important;
 }
 section a h3:before {
-  background: #f5c518;
+  background: var(--yeloow);
   content: "";
   border-radius: 5px;
   position: absolute;
@@ -28,31 +40,32 @@ section a h3:before {
   width: 4px;
   height: 100%;
 }
-section a h3:hover  {
-  color: #fff !important; 
-  transition: 0.5s;
-}
-.fa-chevron-right:hover {
-  color: #f5c518 !important; 
-}
-/* start nabar */
-.navbar-dark .nav-item .nav-link {
-
-    color: #fff;
+.begining-section a:hover .fa-chevron-right { 
+  color: var(--yeloow) !important; 
+  transition: var(--transition) ;
   }
-  .navbar-dark .nav-item .nav-link ,
+
+
+/* start nabar */
+.navbar {
+  background-color: #121212;
+}
+.navbar .nav-item .nav-link {
+    color: var(--white);
+  }
+  .navbar  .nav-item .nav-link ,
   .navbar .menu
    {
     font-size: 13px;
     margin: 0 5px;
   }
-  .navbar-dark .nav-item .nav-link:hover ,
+  .navbar  .nav-item .nav-link:hover ,
   .navbar .menu:hover 
    {
     background-color: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    transition: var(--transition) ;
     border-radius: 0.25rem;
-    color: #fff;
+    color:  var(--white);
   }
   .navbar .menu:active {
     border-color: rgba(255, 255, 255, 0.1);
@@ -62,13 +75,18 @@ section a h3:hover  {
     left: 0;
   }
 
-  /* end nabar */
 
   /* start offcanvas  */
 
   .offcanvas  {
     background-color: #1f1f1f;
-    color: #fff;
+    color: var(--white);
+  }
+  @media only screen and (min-width: 768px) {
+    .collapse {
+      display: flex !important;
+      flex-direction: column;
+    }
   }
   @media only screen and (min-width: 768px) {
     .collapse {
@@ -77,28 +95,24 @@ section a h3:hover  {
     }
   }
   @media only screen and (max-width: 767px) {
-    .collapse.show {
+   .offcanvas-body .collapse.show {
       display: flex !important;
       flex-direction: column;
       border-bottom:1px solid #ffffff1a;
     }
   }
+  @media only screen and (max-width: 991px) {
+    .menu-collapse.collapse:not(.show) {
+      display: none !important;
+  }
+   }
   .collapsing {
   display: none;
   transition: 0ms;
   }
-  @media only screen and (max-width: 767px) {
-    .collapse.show:nth-of-type(1) {
-      display: flex !important;
-      flex-direction: column;
-      border-bottom:1px solid #ffffff1a;
-      border-top: none;
-    }
+  .navbar-toggler {
+    color: var(--white);
   }
-  .cUyVUh:nth-of-type(1) {
-    border-top: none;
-}
-
   /* end  offcanvas  */
 
 
@@ -106,14 +120,15 @@ section a h3:hover  {
 .navbar .menu {
   font-size: 13px;
   margin: 0 5px;
+  color: var(--white);
 }
 
 .navbar-dark .nav-item .nav-link:hover,
 .navbar .menu:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  transition: var(--transition) ;
   border-radius: 0.25rem;
-  color: #fff;
+  color:  var(--white);
 }
 
 .navbar .menu:active {
@@ -126,6 +141,7 @@ section a h3:hover  {
 }
 
 /* end nabar */
+/* start slider */
 
 .img-gradient:after {
   content:'';
@@ -149,10 +165,12 @@ section a h3:hover  {
   height: 10px;
   border-radius: 100%;
 }
+/* end slider */
+
 /* start up next */
 .content-next .vcard:hover {
-  background-color: #383b3f !important;
-  transition: all 0.3s ease;
+  background-color: #383b3f60 !important;
+  transition: var(--transition) ;
 }
 
 .vcard .about-photo {
@@ -173,11 +191,14 @@ section a h3:hover  {
 .vcard .details .about-details span {
   display: block;
   z-index: 2;
-  color: #FFF;
+  color: var(--white);
   max-height: 70px;
   overflow: hidden;
 }
-
+.carousel  .browse:hover {
+  color:  var(--yeloow) !important;
+  transition: var(--transition) ;
+}
 /* end up next */
 /* end carsoul */
 /* start what to show */

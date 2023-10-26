@@ -16,12 +16,12 @@
   
     <!-- start nav-bar -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <!-- Container wrapper -->
         <div class="container">
           <!-- Navbar brand -->
           <a class="navbar-brand me-0" href="#"><img id="MDB-logo" src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo" draggable="false" height="30" /></a>   
-              <div class="btn text-white  me-auto menu d-flex align-items-center text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <div class="btn ms-auto menu d-flex align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="fas fa-bars me-1"></i>
                   menu
               </div>
@@ -65,7 +65,7 @@
                         search<i class="fas fa-chevron-right ps-2"></i></a>
                     </li>
                   </ul>
-                  <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
+                  <input type="search" class="form-control" placeholder="Search food" aria-label="Search" />
                 </div>
                 <a href="#!" class="position-absolute end-0 text-dark"><i class="fas fa-search pe-3"></i></a>
               </form>
@@ -78,7 +78,7 @@
                 <i class="fas fa-bars"></i>
               </button>
               <!-- Collapsible wrapper -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse menu-collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left links -->
 
                 <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -235,9 +235,9 @@
           </div>
           <!-- Carousel wrapper -->
         </div>
-        <div class="col-lg-4  d-none d-lg-block overflow-hidden">
-          <h4 class="text-warning fw-bold">Up Next</h4>
-          <div class="content-next">
+        <div class="col-lg-4 overflow-hidden">
+          <h4 class="text-warning fw-bold d-none d-lg-block ">Up Next</h4>
+          <div class="content-next d-none d-lg-block ">
             <div class="row">
               <a href="#" class="text-decoration-none p-0 mb-1">
                 <div class="col">
@@ -287,6 +287,11 @@
               </a>
             </div>
           </div>
+          <a href="" class="text-primary text-decoration-none w-auto position-relative browse">
+            <h5 class=" m-0 py-3 fw-bold d-inline">Browse food
+              <i class="fa-solid fa-chevron-right fa-xs ps-2 "></i>
+            </h4>
+          </a>
         </div>
       </div>
     </div>
@@ -294,13 +299,13 @@
   <!-- end carousel -->
   <!-- start what to show -->
   <div class="container">
-    <h1 class="title-section text-warning">What to visit</h1>
+    <h1 class="title-section py-5 text-warning">What to visit</h1>
   </div>
-  <section class="What-to">
+  <section class="begining-section">
     <div class="container">
       <div class="row">
-        <a href="" class="text-decoration-none position-relative">
-          <h3 class="text-primary m-0 d-inline ps-3 d-flex align-items-center">Top Picks
+        <a href="" class="text-primary text-decoration-none w-auto  position-relative">
+          <h3 class=" m-0 d-inline ps-3 d-flex align-items-center">Top Picks
             <i class="fa-solid fa-chevron-right"></i>
           </h3>
         </a>
