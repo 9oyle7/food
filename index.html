@@ -21,7 +21,7 @@
         <div class="container">
           <!-- Navbar brand -->
           <a class="navbar-brand me-0" href="#"><img id="MDB-logo" src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo" draggable="false" height="30" /></a>   
-              <div class="btn ms-auto menu d-flex align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <div class="btn ms-auto menu d-flex align-items-center d-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="fas fa-bars me-1"></i>
                   menu
               </div>
@@ -107,6 +107,7 @@
         <!-- Container wrapper -->
     </nav>
     <!-- offcanvase content -->
+<!-- 
     <div class="offcanvas offcanvas-top overflow-auto vh-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="container">
         <div class="row">
@@ -170,11 +171,17 @@
         </div>
       </div>
     </div>
+     -->
   <!-- end na-bar -->
+  <div class="container mt-4">
+    <div class="hero  overflow-hidden text-center img-fluid border rounded-2">
+      <img src="img/hero.avif" class="img-fluid" alt="">
+    </div>
+  </div>
   <div class="carousel mt-4">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 carusel">
+        <div class="col carusel">
           <!-- Carousel wrapper -->
           <div id="carouselBasicExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <!-- Indicators -->
@@ -190,8 +197,9 @@
             <!-- Inner -->
             <div class="carousel-inner ">
               <!-- Single item -->
+              
               <div class="carousel-item active img-gradient">
-                <img src="img/856x600.png" class="d-block img-fluid object-cover"
+                <img src="img/416x500.jpg" class="d-block img-fluid object-cover"
                   alt="15 years of experience in the IT industry" />
                 <div class="carousel-caption text-white z-3">
                   <h5>15 years of experience in the IT industry</h5>
@@ -199,9 +207,10 @@
                 </div>
               </div>
 
-              <!-- Single item -->
+<!-- 
+
               <div class="carousel-item img-gradient">
-                <img src="img/856x600-2.png" class="d-block img-fluid object-cover"
+                <img src="https://placehold.co/868x525" class="d-block img-fluid object-cover"
                   alt="243 completed projects" />
                 <div class="carousel-caption text-white z-3">
                   <h5>243 completed projects</h5>
@@ -209,9 +218,10 @@
                 </div>
               </div>
 
-              <!-- Single item -->
+
+
               <div class="carousel-item img-gradient">
-                <img src="img/856x600-3.png" class="d-block img-fluid object-cover"
+                <img src="https://placehold.co/868x525" class="d-block img-fluid object-cover"
                   alt="53 satisfied customers" />
                 <div class="carousel-caption text-white z-3">
                   <h5>53 satisfied customers</h5>
@@ -219,6 +229,7 @@
                 </div>
               </div>
             </div>
+             -->
             <!-- Inner -->
 
             <!-- Controls -->
@@ -234,65 +245,13 @@
             </button>
           </div>
           <!-- Carousel wrapper -->
-        </div>
-        <div class="col-lg-4 overflow-hidden">
-          <h4 class="text-warning fw-bold d-none d-lg-block ">Up Next</h4>
-          <div class="content-next d-none d-lg-block ">
-            <div class="row">
-              <a href="#" class="text-decoration-none p-0 mb-1">
-                <div class="col">
-                  <div class="vcard overflow-hidden d-flex rounded">
-                    <div class="about-photo">
-                      <img class="about-photo-img rounded"src="img/100x120.png" alt="saleh">
-                    </div>
-                   <div class="details d-flex align-items-center">
-                     <div class="about-details"> 
-                          <span> Maneger of University </span>
-                          <span class="text-secondary"> 0545199955 </span>
-                     </div>
-                 </div>
-                </div>
-              </div> 
-              </a>
-              <a href="#" class="text-decoration-none p-0 mb-1">
-                <div class="col
-                ">
-                  <div class="vcard overflow-hidden d-flex rounded">
-                    <div class="about-photo">
-                      <img class="about-photo-img rounded"src="http://via.placeholder.com/100x120" alt="saleh">
-                    </div>
-                   <div class="details d-flex align-items-center">
-                     <div class="about-details"> 
-                          <span> Maneger of University </span>
-                          <span class="text-secondary"> 0545199955 </span>
-                     </div>
-                 </div>
-                </div>
-              </div> 
-              </a>
-              <a href="#" class="text-decoration-none p-0 mb-1">
-                <div class="col">
-                  <div class="vcard overflow-hidden d-flex rounded">
-                    <div class="about-photo">
-                      <img class="about-photo-img rounded"src="http://via.placeholder.com/100x120" alt="saleh">
-                    </div>
-                   <div class="details d-flex align-items-center">
-                     <div class="about-details"> 
-                          <span> Maneger of University </span>
-                          <span class="text-secondary"> 0545199955 </span>
-                     </div>
-                 </div>
-                </div>
-              </div> 
-              </a>
-            </div>
-          </div>
           <a href="" class="text-primary text-decoration-none w-auto position-relative browse">
             <h5 class=" m-0 py-3 fw-bold d-inline">Browse food
               <i class="fa-solid fa-chevron-right fa-xs ps-2 "></i>
-            </h4>
+            </h5>
           </a>
         </div>
+        
       </div>
     </div>
   </div>
@@ -312,6 +271,7 @@
       </div>
     </div>
   </section>
+  
     <!-- end what to show -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>

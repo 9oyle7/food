@@ -45,7 +45,8 @@ section a h3:before {
   transition: var(--transition) ;
   }
 
-
+.hero {
+}
 /* start nabar */
 .navbar {
   background-color: #121212;
@@ -204,3 +205,10 @@ section a h3:before {
 /* start what to show */
 
 /* end what to show */
+
+
+
+
+
+
+
