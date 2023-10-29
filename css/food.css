@@ -211,4 +211,8 @@ section a h3:before {
 
 
 
+.swiper-slide {
+  height: 200px !important;
+  background-color: red;
 
+}
