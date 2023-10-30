@@ -5,16 +5,24 @@ var swiper = new Swiper(".mySwiper", {
     grapCursor: true,
     loop: true,
     breakpoints: {
-        480: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
       },
 
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     pagination: {
       el: ".swiper-pagination",

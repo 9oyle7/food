@@ -51,14 +51,20 @@ section a h3:before {
   background-color: #121212;
 }
 .navbar .nav-item .nav-link {
-    color: var(--white);
+    color: #333;
   }
   .navbar  .nav-item .nav-link ,
   .navbar .menu
    {
     font-size: 13px;
-    margin: 0 5px;
+    font-weight: bold;
   }
+  .navbar li.nav-item {
+    width: 65px;
+    margin: 0 5px;
+    line-height: 22px;
+    text-align: center;
+}
   .navbar  .nav-item .nav-link:hover ,
   .navbar .menu:hover 
    {
@@ -74,7 +80,17 @@ section a h3:before {
     position: relative;
     left: 0;
   }
-
+  @media only screen and (max-width: 991px) {
+    .navigation {
+      flex-direction: column-reverse;
+  }
+   }
+   @media only screen and (max-width: 991px) {
+    .navbar .navbar-nav {
+      flex-direction: row;
+      justify-content: center;
+  }
+   }
 
   /* start offcanvas  */
 
@@ -208,13 +224,8 @@ section a h3:before {
 
 /* end what to show */
 
-
-
-
-
-
 .swiper-slide {
   height: 200px !important;
-  background-color: red;
+  background-color: #ffd60a ;
 
 }
