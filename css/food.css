@@ -11,13 +11,13 @@ body {
   color:  var(--white) !important;
 }
 section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   font-weight: bold;
 }
 @media only screen and (max-width: 767px) {
   section , .carousel  {
-    background: #121212;
+    
   }
 }
 .offcanvas-header .link-warning:focus, 
@@ -36,11 +36,14 @@ section a h3:before {
   content: "";
   border-radius: 5px;
   position: absolute;
-  left: 10px;
+  right: 10px;
   width: 4px;
   height: 100%;
 }
-.begining-section a:hover .fa-chevron-right { 
+.begining-section {
+  direction: rtl;
+}
+.begining-section a:hover .fa-chevron-left { 
   color: var(--yeloow) !important; 
   transition: var(--transition) ;
   }
@@ -76,7 +79,7 @@ section a h3:before {
   .navbar .menu:active {
     border-color: rgba(255, 255, 255, 0.1);
   }
-  .fa-li {
+  .navbar .dropdown-menu .fa-li {
     position: relative;
     left: 0;
   }
@@ -89,51 +92,14 @@ section a h3:before {
     .navbar .navbar-nav {
       flex-direction: row;
       justify-content: center;
-  }
-   }
-
-  /* start offcanvas  */
-
-  .offcanvas  {
-    background-color: #1f1f1f;
-    color: var(--white);
-  }
-/*   
-  @media only screen and (min-width: 768px) {
-    .collapse {
-      display: flex !important;
-      flex-direction: column;
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    .collapse {
-      display: flex !important;
-      flex-direction: column;
-    }
-  }
-  @media only screen and (max-width: 767px) {
-   .offcanvas-body .collapse.show {
-      display: flex !important;
-      flex-direction: column;
-      border-bottom:1px solid #ffffff1a;
     }
   }
   @media only screen and (max-width: 991px) {
-    .menu-collapse.collapse:not(.show) {
-      display: none !important;
+    .navbar .navbar-brand {
+      text-align: center;
+      width: 100%;
+    }
   }
-   }
-    */
-  .collapsing {
-  display: none;
-  transition: 0ms;
-  }
-  .navbar-toggler {
-    color: var(--white);
-  }
-  /* end  offcanvas  */
-
 
 .navbar-dark .nav-item .nav-link,
 .navbar .menu {
@@ -154,12 +120,8 @@ section a h3:before {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-.fa-li {
-  position: relative;
-  left: 0;
-}
+/* end navbar */
 
-/* end nabar */
 /* start slider */
 
 .img-gradient:after {
@@ -186,46 +148,12 @@ section a h3:before {
 }
 /* end slider */
 
-/* start up next */
-.content-next .vcard:hover {
-  background-color: #383b3f60 !important;
-  transition: var(--transition) ;
-}
-
-.vcard .about-photo {
-  margin: 10px;
-  width: 100px;
-  height: 120px;
-}
-.vcard .about-photo img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-.vcard .details {
-  width: calc(100% - 108px);
-}
-
-.vcard .details .about-details span {
-  display: block;
-  z-index: 2;
-  color: var(--white);
-  max-height: 70px;
-  overflow: hidden;
-}
-.carousel  .browse:hover {
-  color:  var(--yeloow) !important;
-  transition: var(--transition) ;
-}
-/* end up next */
-/* end carsoul */
-/* start what to show */
-
-/* end what to show */
-
+/* start resturants */
 .swiper-slide {
-  height: 200px !important;
-  background-color: #ffd60a ;
+  height: 300px !important;
+  background-color: #1a1a1a ;
+  padding: 10px;
 
 }
+/* end resturants */
+

@@ -1,28 +1,28 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
-    centeredSlides: false,
-    spaceBetween: 30,
+    centeredSlides: true,
+    spaceBetween: 10,
     grapCursor: true,
     loop: true,
     breakpoints: {
       640: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 10,
       },
       768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
+        slidesPerView: 5,
+        spaceBetween: 10,
       },
       1024: {
         slidesPerView: 5,
-        spaceBetween: 50,
+        spaceBetween: 10,
       },
       },
 
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
 
     pagination: {
       el: ".swiper-pagination",
