@@ -150,10 +150,18 @@ section a h3:before {
 
 /* start resturants */
 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #1a1a1a;
   height: 300px !important;
-  background-color: #1a1a1a ;
-  padding: 10px;
-
+  overflow: hidden;
+ 
 }
+
+.swiper-slide .img {
+
+  background-color: red;
+}
+
 /* end resturants */
 
