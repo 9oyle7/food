@@ -1,29 +1,34 @@
 :root {
-  --yeloow: #f5c518 ;
-  --yeloow-opacity: #f5c51899 ;
+  --yeloow: #F9CF93 ;
+  --yeloow-opacity: #cb7032 ;
   --white: #fff;
+  --black: #333;
   --transition:  all 0.3s ease;
   --btn-background-color: #2c2c2c;
+
 }
 .btn-primary {
-  background-color: var(--btn-background-color);
-  border-color: var(--btn-background-color);
+  background-color: var(--yeloow);
+  border-color: var(--yeloow);
 }
 .btn-primary:hover , 
 .btn-primary:focus ,
 .btn-primary:active {
-  background-color: #30353c !important;
-  border-color: #30353c !important;
+  background-color: #f9ce93b7 !important;
+  border-color: #f9ce93b7 !important;
 }
 body {
   font-family: 'Cairo', sans-serif;
-  background-color: #000000;
+  background-color: #FAEEE0;
   color:  var(--white) !important;
+  height: 3000px;
 }
 section {
   padding-top: 60px;
   padding-bottom: 30px;
-  font-weight: bold;
+}
+section.slider {
+  background: #fae4c9;
 }
 @media only screen and (max-width: 767px) {
   section , .carousel  {
@@ -39,7 +44,7 @@ section {
   color: var(--yeloow) !important;
 }
 .text-primary {
-  color: var(--white) !important;
+  color: var(--black) !important;
 }
 section a h3:before {
   background: var(--yeloow);
@@ -61,10 +66,10 @@ section a h3:before {
 
 /* start nabar */
 .navbar {
-  background-color: #121212;
+  background-color: var(--yeloow);
 }
-.navbar .nav-item .nav-link {
-    color: #333;
+.navbar .nav-item .nav-link , .navbar-brand {
+    color: var(--white);
   }
   .navbar  .nav-item .nav-link ,
   .navbar .menu
@@ -165,7 +170,7 @@ section a h3:before {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #1a1a1a;
+  background: #FAEEE0;
   height: 350px !important;
   overflow: hidden;
 }
@@ -179,13 +184,13 @@ section a h3:before {
   direction: rtl;
   font-size: 16px;
   padding: 0 10px;
-  color: var(--white);
+  color: #7d4b0d  ;
 }
 .swiper .swiper-slide .content .rating  {
   color: var(--yeloow) !important;
 }
 .swiper .swiper-slide .content .rating span  {
-  color: #b7b7b7;
+  color: #544e46;
 }
 .swiper .swiper-slide .content .title  {
   margin: 10px 0;
@@ -194,13 +199,14 @@ section a h3:before {
   position: absolute;
 }
 .swiper .swiper-slide .follow a {
-  color: var(--yeloow);
+  background-color: #f9cf9382;
+  color: var(--white);
   width: 30px;
   display: block;
 }
 .swiper .swiper-slide .follow a:hover {
   transition: var(--transition);
-  color: var(--yeloow-opacity);
+  color: #f9ce93b7;
 }
 /* end resturants */
 

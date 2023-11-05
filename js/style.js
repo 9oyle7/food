@@ -3,23 +3,23 @@
     slidesPerView: 2.5,
     centeredSlides: false,
     spaceBetween: 20,
-    loop: true,
+    loop: false,
     // autoplay: {
     //     delay: 2500,
     //     disableOnInteraction: false,
     // },
     breakpoints: {
         640: {
-          slidesPerView: 4,
+          slidesPerView: 3.6,
           spaceBetween: 10,
         },
         768: {
           slidesPerView: 5,
           spaceBetween: 10,
         },
-        1024: {
-          slidesPerView:8,
-          spaceBetween: 25,
+        1240: {
+          slidesPerView:7,
+          spaceBetween: 10,
         },
         },
     navigation: {
