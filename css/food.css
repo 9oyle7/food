@@ -3,7 +3,17 @@
   --yeloow-opacity: #f5c51899 ;
   --white: #fff;
   --transition:  all 0.3s ease;
-
+  --btn-background-color: #2c2c2c;
+}
+.btn-primary {
+  background-color: var(--btn-background-color);
+  border-color: var(--btn-background-color);
+}
+.btn-primary:hover , 
+.btn-primary:focus ,
+.btn-primary:active {
+  background-color: #30353c !important;
+  border-color: #30353c !important;
 }
 body {
   font-family: 'Cairo', sans-serif;
@@ -61,9 +71,12 @@ section a h3:before {
    {
     font-size: 13px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navbar li.nav-item {
-    width: 65px;
+    width: 90px;
     margin: 0 5px;
     line-height: 22px;
     text-align: center;
@@ -153,15 +166,41 @@ section a h3:before {
   text-align: center;
   font-size: 18px;
   background: #1a1a1a;
-  height: 300px !important;
+  height: 350px !important;
   overflow: hidden;
- 
+}
+.swiper-slide.offer {
+  background-color: blue;
+  border: 1px solid blue;
 }
 
-.swiper-slide .img {
-
-  background-color: red;
+.swiper .swiper-slide .content {
+  text-align: right;
+  direction: rtl;
+  font-size: 16px;
+  padding: 0 10px;
+  color: var(--white);
 }
-
+.swiper .swiper-slide .content .rating  {
+  color: var(--yeloow) !important;
+}
+.swiper .swiper-slide .content .rating span  {
+  color: #b7b7b7;
+}
+.swiper .swiper-slide .content .title  {
+  margin: 10px 0;
+}
+.swiper .swiper-slide .follow   {
+  position: absolute;
+}
+.swiper .swiper-slide .follow a {
+  color: var(--yeloow);
+  width: 30px;
+  display: block;
+}
+.swiper .swiper-slide .follow a:hover {
+  transition: var(--transition);
+  color: var(--yeloow-opacity);
+}
 /* end resturants */
 
