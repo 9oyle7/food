@@ -1,34 +1,40 @@
 :root {
-  --yeloow: #F9CF93 ;
-  --yeloow-opacity: #cb7032 ;
+  --yeloow: #ffd700 ;
+  --yeloow-opacity: #ffd700 ;
   --white: #fff;
   --black: #333;
-  --transition:  all 0.3s ease;
+  --transition: .3s ease-in;
   --btn-background-color: #2c2c2c;
 
 }
 .btn-primary {
-  background-color: var(--yeloow);
-  border-color: var(--yeloow);
+  background-color: #ff8100;
+  border-color:  #ff8100;
 }
 .btn-primary:hover , 
 .btn-primary:focus ,
 .btn-primary:active {
-  background-color: #f9ce93b7 !important;
-  border-color: #f9ce93b7 !important;
+  background-color:  #ff8000c2 !important;
+  border-color: #ff800000 !important;
 }
 body {
   font-family: 'Cairo', sans-serif;
-  background-color: #FAEEE0;
+  background-color: #fff;
   color:  var(--white) !important;
   height: 3000px;
 }
 section {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 section.slider {
-  background: #fae4c9;
+/* 
+  background: #141E30;  
+  background: -webkit-linear-gradient(to bottom, #243B55, #141E30);  
+  background: linear-gradient(to bottom, #243B55, #141E30); 
+   */
+
+  padding: 30px 0px;
 }
 @media only screen and (max-width: 767px) {
   section , .carousel  {
@@ -60,9 +66,14 @@ section a h3:before {
 }
 .begining-section a:hover .fa-chevron-left { 
   color: var(--yeloow) !important; 
-  transition: var(--transition) ;
+  transition: var(--transition) !important ;
   }
-
+  .begining-section span {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #444;
+    word-spacing: 1px;
+}
 
 /* start nabar */
 .navbar {
@@ -170,9 +181,11 @@ section a h3:before {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #FAEEE0;
-  height: 350px !important;
+  background: #243B55;
+  height: 400px !important;
   overflow: hidden;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 .swiper-slide.offer {
   background-color: blue;
@@ -184,13 +197,13 @@ section a h3:before {
   direction: rtl;
   font-size: 16px;
   padding: 0 10px;
-  color: #7d4b0d  ;
+  color: var(--white);
 }
 .swiper .swiper-slide .content .rating  {
   color: var(--yeloow) !important;
 }
 .swiper .swiper-slide .content .rating span  {
-  color: #544e46;
+  color: #fff;
 }
 .swiper .swiper-slide .content .title  {
   margin: 10px 0;
@@ -198,15 +211,23 @@ section a h3:before {
 .swiper .swiper-slide .follow   {
   position: absolute;
 }
+.swiper .swiper-slide .offer {
+
+
+  background-color: red;
+
+} 
+
+
 .swiper .swiper-slide .follow a {
-  background-color: #f9cf9382;
+  background-color: var(--yeloow);
   color: var(--white);
   width: 30px;
   display: block;
 }
 .swiper .swiper-slide .follow a:hover {
   transition: var(--transition);
-  color: #f9ce93b7;
+  color: var(--white);
 }
 /* end resturants */
 
