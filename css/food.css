@@ -86,7 +86,7 @@ section a h3:before {
 .navbar .nav-item .nav-link , .navbar-brand {
     color: var(--white);
   }
-  
+
   .navbar  .nav-item .nav-link ,
   .navbar .menu
    {
@@ -190,20 +190,16 @@ section a h3:before {
   text-align: center;
   font-size: 18px;
   background: #243B55;
-  height: 400px !important;
+  height: auto ;
   border-bottom-left-radius: 24px;
   border-top-right-radius: 10px;
-}
-.swiper-slide.offer {
-  background-color: blue;
-  border: 1px solid blue;
 }
 
 .swiper .swiper-slide .content {
   text-align: right;
   direction: rtl;
   font-size: 16px;
-  padding: 0 10px;
+  padding: 5px 10px;
   color: var(--white);
 }
 .swiper .swiper-slide .content .rating  {
@@ -219,12 +215,6 @@ section a h3:before {
   position: absolute;
   right: 0;
 }
-.swiper .swiper-slide .offer {
-
-
-  
-
-} 
 
 .swiper .swiper-slide .follow a {
   background-color: #243B55;
@@ -240,15 +230,14 @@ section a h3:before {
   color: var(--white);
 }
 
-
-.ribbon:nth-child(even) {
+.swiper-slide .ribbon:nth-child(even) {
   margin-right: 4%;
 }
 @media (max-width: 500px) {
-  .ribbon {
+  .swiper-slide .ribbon {
     width: 100%;
   }
-  .ribbon:nth-child(even) {
+  .swiper-slide .ribbon:nth-child(even) {
     margin-right: 0%;
   }
 }
@@ -286,5 +275,10 @@ section a h3:before {
   border-right: 20px solid var(--orange);
   border-bottom: 20px solid transparent;
 }
+.swiper-slide .delivery {
+  height: 30px;
+
+}
+
 /* end resturants */
 
