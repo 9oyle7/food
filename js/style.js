@@ -2,7 +2,7 @@
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2.5,
     centeredSlides: false,
-    spaceBetween: 20,
+    spaceBetween: 5,
     loop: false,
     // autoplay: {
     //     delay: 2500,
