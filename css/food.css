@@ -86,6 +86,7 @@ section a h3:before {
 .navbar .nav-item .nav-link , .navbar-brand {
     color: var(--white);
   }
+  
   .navbar  .nav-item .nav-link ,
   .navbar .menu
    {
