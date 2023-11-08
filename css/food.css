@@ -1,7 +1,7 @@
 :root {
   --yeloow: #ffd700 ;
   --yeloow-opacity: #ffd700 ;
-  --orange: #ff8100;
+  --orange: rgb(215,19,19);
   --white: #fff;
   --black: #444;
   --transition: .3s ease-in;
@@ -9,13 +9,13 @@
 
 }
 .btn-primary {
-  background-color: #ff8100;
-  border-color:  #ff8100;
+  background-color: var(--orange);
+  border-color:  var(--orange);
 }
 .btn-primary:hover , 
 .btn-primary:focus ,
 .btn-primary:active {
-  background-color:  #ff8000c2 !important;
+  background-color: rgba(var(--orange), 0.8);
   border-color: #ff800000 !important;
 }
 body {
