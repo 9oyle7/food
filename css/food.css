@@ -1,23 +1,35 @@
 :root {
   --yeloow: #ffd700 ;
   --yeloow-opacity: #ffd700 ;
-  --orange: rgb(215,19,19);
+  --main-color: 215,19,19;
   --white: #fff;
   --black: #444;
   --transition: .3s ease-in;
   --btn-background-color: #2c2c2c;
 
+
 }
 .btn-primary {
-  background-color: var(--orange);
-  border-color:  var(--orange);
+  background-color: rgba(var(--main-color), 1);
+  border-color:  var(--main-color);
+  transition: var(--transition) ;
+}
+.btn-outline-primary {
+  border-color: rgba(var(--main-color), 1) !important;
+  color: rgba(var(--main-color), 1) !important;
 }
 .btn-primary:hover , 
 .btn-primary:focus ,
-.btn-primary:active {
-  background-color: rgba(var(--orange), 0.8);
-  border-color: #ff800000 !important;
+.btn-primary:active ,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active
+{
+  background-color: rgba(var(--main-color), 0.8) !important;
+  border-color: rgba(var(--main-color), 0) !important;
+  color: #fff !important;
 }
+
 body {
   font-family: 'Cairo', sans-serif;
   background-color: #fff;
@@ -38,11 +50,7 @@ section.slider {
     
   }
 }
-.offcanvas-header .link-warning:focus, 
-.offcanvas-header .link-warning:hover {
- color: var(--yeloow-opacity) !important;
- transition: var(--transition) ;
-}
+
 .text-warning {
   color: var(--yeloow) !important;
 }
@@ -101,7 +109,6 @@ section a h3:before {
   .navbar  .nav-item .nav-link:hover ,
   .navbar .menu:hover 
    {
-    background-color: rgba(255, 255, 255, 0.1);
     transition: var(--transition) ;
     border-radius: 0.25rem;
     color:  var(--white);
@@ -180,16 +187,19 @@ section a h3:before {
 
 /* start resturants */
 .swiper {
-  padding-top: 15px;
+  padding: 15px 0;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: var(--white);
-  color: var(--black);
+  background: #072b4d;
+  color: var(--white);
   height: auto ;
-  border-bottom-left-radius: 24px;
-  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 
+              0 2px 2px 0 rgba(0,0,0,.14), 
+              0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 .swiper .swiper-slide .content {
@@ -202,7 +212,7 @@ section a h3:before {
   color: var(--yeloow) !important;
 }
 .swiper .swiper-slide .content .rating span  {
-  color: var(--black);
+  color: var(--white);
 }
 .swiper .swiper-slide .content .title  {
   margin: 10px 0;
@@ -241,7 +251,7 @@ section a h3:before {
   font-size: 14px;
   color: var(--white);
 }
-.swiper-slide .ribbon2 {
+.swiper-slide .ribbon-body {
  width: 40px;
  padding: 5px 0;
  position: absolute;
@@ -249,27 +259,33 @@ section a h3:before {
  left: 15px;
  text-align: center;
  border-top-left-radius: 3px;
- background: var(--orange);
+ background-color: rgba(var(--main-color), 1);
 }
-.swiper-slide .ribbon2:before {
- height: 0;
+.swiper-slide .ribbon-body:before {
+  height: 6px;
+  width: 5px;
+  background: #830c0b;
+  right: -5px;
+  top: 0px;
+  border-top-right-radius: 5px;
+ /* height: 0;
  width: 0;
  right: -6px;
  top: 0.1px;
  border-bottom: 6px solid #8D5A20;
- border-right: 6px solid transparent;
+ border-right: 6px solid transparent; */
 }
-.swiper-slide .ribbon2:before, .ribbon2:after {
+.swiper-slide .ribbon-body:before, .swiper-slide .ribbon-body:after {
   content: "";
   position: absolute;
 }
-.swiper-slide .ribbon2:after {
+.swiper-slide .ribbon-body:after {
   height: 0;
   width: 0;
-  bottom: -18px;
+  bottom: -19px;
   left: 0;
-  border-left: 20px solid var(--orange);
-  border-right: 20px solid var(--orange);
+  border-left: 20px solid rgba(var(--main-color), 1);
+  border-right: 20px solid rgba(var(--main-color), 1);
   border-bottom: 20px solid transparent;
 }
 .swiper-slide .delivery {
