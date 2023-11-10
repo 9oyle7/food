@@ -1,6 +1,24 @@
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/food/webfonts/DINNextLTArabic-Regular-4.ttf');
+
+}
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 700;
+  src: url('/food/webfonts/DINNextLTArabic-Medium-4.ttf');
+}
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 900;
+  src: url('/food/webfonts/din-next-lt-w23-bold-1.ttf');
+}
 :root {
-  --yeloow: #ffd700 ;
-  --yeloow-opacity: #ffd700 ;
+  --yeloow: 255, 215, 0 ;
   --main-color: 215,19,19;
   --white: #fff;
   --black: #444;
@@ -31,10 +49,9 @@
 }
 
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'DIN', sans-serif;
   background-color: #fff;
   color:  var(--white) !important;
-  height: 3000px;
 }
 section {
   padding-top: 60px;
@@ -52,13 +69,13 @@ section.slider {
 }
 
 .text-warning {
-  color: var(--yeloow) !important;
+  color: rgba(var(--yeloow), 1) !important;
 }
 .text-primary {
   color: var(--black) !important;
 }
 section a h3:before {
-  background: var(--yeloow);
+  background: rgba(var(--yeloow), 1);
   content: "";
   border-radius: 5px;
   position: absolute;
@@ -70,7 +87,7 @@ section a h3:before {
   direction: rtl;
 }
 .begining-section a:hover .fa-chevron-left { 
-  color: var(--yeloow) !important; 
+  color: rgba(var(--yeloow), 1) !important; 
   transition: var(--transition) !important ;
   }
   .begining-section span {
@@ -209,7 +226,7 @@ section a h3:before {
   padding: 5px 10px;
 }
 .swiper .swiper-slide .content .rating  {
-  color: var(--yeloow) !important;
+  color: rgba(var(--yeloow), 1) !important;
 }
 .swiper .swiper-slide .content .rating span  {
   color: var(--white);
@@ -223,7 +240,7 @@ section a h3:before {
 }
 
 .swiper .swiper-slide .follow a {
-  background-color: var(--yeloow);
+  background-color: rgba(var(--yeloow), 1);
   color: var(--white);
   width: 30px;
   display: block;
@@ -234,6 +251,8 @@ section a h3:before {
 .swiper .swiper-slide .follow a:hover {
   transition: var(--transition);
   color: var(--white);
+  background-color: rgba(var(--yeloow), 0.8);
+
 }
 
 .swiper-slide .ribbon:nth-child(even) {
@@ -295,3 +314,211 @@ section a h3:before {
 
 /* end resturants */
 
+/* start menu all resturant */
+.card {
+  text-align: center;
+  font-size: 18px;
+  background: #072b4d;
+  color: var(--white);
+  height: auto;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.card .content {
+  text-align: right;
+  direction: rtl;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.card .content .rating  {
+  color: rgba(var(--yeloow), 1)!important;
+}
+.card .content .rating span  {
+  color: var(--white);
+}
+.card .content .title  {
+  margin: 10px 0;
+}
+.card .follow   {
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.card .follow a {
+  background-color: rgba(var(--yeloow), 1);
+  color: var(--white);
+  width: 30px;
+  display: block;
+  border-bottom-left-radius: 15px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.card .follow a:hover {
+  transition: var(--transition);
+  color: var(--white);
+  background-color: rgba(var(--yeloow), 0.8);
+}
+
+.card .ribbon:nth-child(even) {
+  margin-right: 4%;
+}
+@media (max-width: 500px) {
+  .card .ribbon {
+    width: 100%;
+  }
+  .card .ribbon:nth-child(even) {
+    margin-right: 0%;
+  }
+}
+.card .ribbon {
+  font-size: 14px;
+  color: var(--white);
+}
+.card .ribbon-body {
+ width: 40px;
+ padding: 5px 0;
+ position: absolute;
+ top: -6px;
+ left: 15px;
+ text-align: center;
+ border-top-left-radius: 3px;
+ background-color: rgba(var(--main-color), 1);
+}
+.card .ribbon-body:before {
+  height: 6px;
+  width: 5px;
+  background: #830c0b;
+  right: -5px;
+  top: 0px;
+  border-top-right-radius: 5px;
+ /* height: 0;
+ width: 0;
+ right: -6px;
+ top: 0.1px;
+ border-bottom: 6px solid #8D5A20;
+ border-right: 6px solid transparent; */
+}
+.card .ribbon-body:before, .card .ribbon-body:after {
+  content: "";
+  position: absolute;
+}
+.card .ribbon-body:after {
+  height: 0;
+  width: 0;
+  bottom: -19px;
+  left: 0;
+  border-left: 20px solid rgba(var(--main-color), 1);
+  border-right: 20px solid rgba(var(--main-color), 1);
+  border-bottom: 20px solid transparent;
+}
+.card .delivery {
+  height: 30px;
+
+}
+/* end menu all resturant */
+
+/* start footer */
+footer {
+  padding: 2em 0;
+}
+.footer {
+  background: #121212;
+}
+.footer .footer-heading {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer .footer-heading .logo , .footer .copyright a{
+  color: #fff;
+}
+.footer p {
+  color: rgba(254, 255, 255, 0.4);
+}
+.footer p.copyright .fa-heart  {
+  color: rgba(var(--main-color), 1) !important;
+}
+.footer .menu {
+  margin-bottom: 30px;
+}
+.footer .menu a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+.footer-social li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  position: relative;
+}
+.footer .footer-social li a {
+  background: transparent;
+  border: 1px solid ;
+  margin: 0 5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* end footer */
+
+/* start breadcrumb */
+.breadcrumb {
+  padding: 8px 15px;
+  margin: 0px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  direction: rtl;
+}
+
+.breadcrumb .breadcrumb-item a .fa-house {
+  color: #8c8c8c;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  content: "\f053";
+  color: #b2b2b2;
+  padding: 0 10px 0 5px;
+  font-size: 12px;
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.breadcrumb-item+.breadcrumb-item {
+  padding-right: 8px;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #b9b9b9;
+}
+.breadcrumb li.breadcrumb-item {
+  line-height: 15px;
+}
+/* .breadcrumb-item span {
+  background: #8c8c8c;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dbdbdb;
+  border-radius: 6px;
+} */
+
+
+/* end breadcrumb */
