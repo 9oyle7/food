@@ -29,7 +29,7 @@
 }
 .btn-primary {
   background-color: rgba(var(--main-color), 1);
-  border-color:  var(--main-color);
+  border-color:  rgba(var(--main-color), 1);
   transition: var(--transition) ;
 }
 .btn-outline-primary {
@@ -520,5 +520,23 @@ footer {
   border-radius: 6px;
 } */
 
-
 /* end breadcrumb */
+/* start filter search */
+.filter-search {
+  background-color: #e0e0e0;
+  padding: 10px 10px;
+  margin: 15px 0; 
+  direction: rtl;
+}
+.filter-search .form-select ,
+.filter-search input::placeholder {
+  background-position: left 0.75rem center;
+  padding: 0.375rem 0.75rem 0.375rem 2.25rem;
+  color: #b9b9b9;
+  background-image:none;
+}
+.filter-search .form-control {
+  padding: 0.375rem 0.75rem 0.375rem 1.25rem;
+}
+
+/* end filter search */

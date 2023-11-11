@@ -83,7 +83,7 @@
   <!-- start breadcrumb -->
   <div class="container">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb my-3">
+      <ol class="breadcrumb mt-3">
         <li class="breadcrumb-item">
           <a href="index.html">
             <span>
@@ -95,9 +95,38 @@
       </ol>
     </nav>
   </div>
-
   <!-- end breadcrumb -->
-
+  <!-- start filter search -->
+  <div class="container overflow-hidden text-center">
+    <div class="filter-search">
+      <div class="row gy-2">
+        <div class="col-12 col-md-3">
+          <input type="text" class="form-control rounded-0" placeholder="اكتب اسم المطعم" aria-label="First name">
+        </div>
+        <div class="col-6 col-md-3">
+          <select class="form-select rounded-0" aria-label="Default select example">
+            <option selected>اختر المنطقة</option>
+            <option value="1">الرياض</option>
+            <option value="2">الشرقية</option>
+            <option value="3">القصيم</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-3">
+          <select class="form-select rounded-0" aria-label="Default select example">
+            <i class="fa-solid fa-chevron-down"></i>
+            <option selected>اختر المدينة</option>
+            <option value="1">الرياض</option>
+            <option value="2">عنيزة</option>
+            <option value="3">البدائع</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-3">
+          <button type="submit" class="btn btn-primary w-100 rounded-0">بحث</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end filter search -->
 
 <div class="container">
   <div class="row row-cols-2 row-cols-md-4 g-4">
